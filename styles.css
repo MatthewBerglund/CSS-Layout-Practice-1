@@ -1,0 +1,215 @@
+html {
+    font-size: 1vw;
+    font-family: Calibri, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(221, 208, 208);
+    display: grid;
+    grid-template-rows: 1fr 80px;
+}
+
+/* ------------ MAIN CONTENT AREA ----------*/
+
+.container {
+    background-color: white;
+    /* width: 1141px; */
+    height: 30.625rem; 
+    width: 71.3125rem;
+    /* max-height: 595px;
+    max-width: 1141px; */
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* ------------ MAIN CONTENT AREA: LEFT -----------------*/
+.left {
+    display: grid;
+    grid-template-columns: 17.8125rem 17.8125rem;
+    grid-template-rows: 15.3125rem 15.3125rem;
+}
+
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top-left {
+    background-image: url("/Media/Savannah-GA-Campgrounds.webp");
+}
+
+.top-right {
+    background-image: url("/Media/savannah_1.jpg");
+}
+
+.bottom-right {
+    background-image: url("/Media/savannah_trees.jpg");
+}
+
+.bottom-left {
+    background-image: url("/Media/savannah_house.jpg");
+}
+
+
+/* ----------- MAIN CONTENT AREA: RIGHT ---------- */
+
+.right {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    padding: 3rem 2.5rem;
+    /* border: 1px solid black; */
+}
+
+.title {
+    color:rgb(230, 129, 103);
+    font-size: 2rem;
+    /* border: 1px solid red; */
+}
+
+.right-middle {
+    font-size: 1rem;
+    line-height: 1.5;
+    /* border: 1px solid blue; */
+    align-self: center;
+}
+
+p {
+    margin: 1.25em 0;
+    /* border: 1px solid orange; */
+}
+
+.right-bottom {
+    align-self: center;
+    /* border: 1px solid green; */
+    margin-bottom: 1rem;
+}
+
+.learn-more-btn {
+    font-size: 1.25rem;
+    font-weight: 800;
+    padding: 0.8em 2.3em;
+    background-color: rgb(235, 147, 125);
+    border: none;
+}
+
+.learn-more-btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.learn-more-btn:active {
+    background-color: rgb(231, 109, 79);
+}
+
+/* ----------- FOOTER ------------ */
+.footer {
+    background-color: rgb(70, 65, 64);
+}
+
+@media screen and (min-width: 1200px) {
+
+    html {
+        font-size: 12px;
+    }
+}
+
+
+
+
+/* ----------- TABLETS ---------- */
+@media screen and (max-width: 992px) {
+    
+    /* --- MAIN CONTENT CONTAINER STYLES --- */
+    .container {
+        width: 65rem; 
+        height: 70rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    
+    /* ----- BOTTOM SECTION STYLES -------*/
+    .left {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+    .top-left {
+    grid-row: span 2;
+    }
+
+    .top-right {
+    grid-row: span 2;
+    }
+
+    .bottom-right {
+    grid-row: span 2;
+    }
+
+    .bottom-left {
+    grid-row: span 2;
+    }
+
+
+    /* ----- TOP SECTION STYLES ----- */
+    
+    .right {
+        grid-column: 1 / 5;
+        grid-row: 1;
+        padding: 3.5rem 3rem;
+    }
+
+    .title {
+        
+        font-size: 2.5rem;
+        /* border: 1px solid red; */
+    }
+
+    .right-middle {
+        font-size: 1.6rem;
+        line-height: 1.8;
+    }
+    
+    .right-bottom {
+        align-self: center;
+        /* border: 1px solid green; */
+        margin-bottom: 1.3rem;
+    }
+    
+    .learn-more-btn {
+        font-size: 1.8rem;
+        font-weight: 800;
+        padding: 0.8em 2.3em;
+        background-color: rgb(235, 147, 125);
+        border: none;
+    }
+}
+
+
+/* --------- MIN SIZE STYLES ---------- */
+@media screen and (max-width: 550px) {
+    html {
+        font-size: 5.5px;
+    }
+}
+
